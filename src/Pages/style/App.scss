@@ -1,0 +1,50 @@
+.body-container{
+    background-color: white;
+}
+#nav-up{    
+    background-color: #030f29;
+    color: #A684FF;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 4%;
+    right: 3%;
+    z-index: 4000;
+    // width: 70px;
+    border-radius: 12px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#nav-up>.up-ic{
+    cursor: pointer;
+}
+#nav-up:hover,#nav-up:focus{
+    opacity: 0.6;
+    background-color: #A684FF;
+    color: #030f29;
+}
+#nav-up>p{
+    font-size: 30px;
+    margin: 1px auto;
+    text-align: center;
+    --badge-color: #ffffff98;
+    --badge-bg-color: #9b6ab84e;
+}
+#nav-up>p:hover{
+    --badge-color: #f1fd10;
+    --badge-bg-color: #9c5eb976;
+}
+.with-icon{
+    margin-left: 6px !important;
+    cursor: context-menu;
+}
+.badge-nav-up{
+    position: relative;
+    bottom: 6px;
+    right: 10px;
+    font-size: 13px;
+    color: var(--badge-color);
+    background-color: var(--badge-bg-color)
+}
