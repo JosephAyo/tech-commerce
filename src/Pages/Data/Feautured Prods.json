@@ -1,0 +1,92 @@
+[
+    {
+        "_id": "5f05109265cadfdeee8c407d",
+        "index": 0,
+        "cost": "$1,529.90",
+        "picture": "https://picsum.photos/260/260",
+        "name": "product",
+        "description": "duis minim enim proident nulla",
+        "rating": "0.6"
+    },
+    {
+        "_id": "5f051092b4f3ffb2aafec6ea",
+        "index": 1,
+        "cost": "$1,345.34",
+        "picture": "https://picsum.photos/260/260",
+        "name": "product",
+        "description": "ipsum ut laborum sint Lorem",
+        "rating": "4.2"
+    },
+    {
+        "_id": "5f051092cb8a6590018f59cb",
+        "index": 2,
+        "cost": "$3,340.56",
+        "picture": "https://picsum.photos/260/260",
+        "name": "product",
+        "description": "mollit minim nisi id consequat",
+        "rating": "3.1"
+    },
+    {
+        "_id": "5f051092fd6ba1bf218398fb",
+        "index": 3,
+        "cost": "$1,650.12",
+        "picture": "https://picsum.photos/260/260",
+        "name": "product",
+        "description": "sint proident consequat et cupidatat",
+        "rating": "3.0"
+    },
+    {
+        "_id": "5f051092493726736836e746",
+        "index": 4,
+        "cost": "$3,660.22",
+        "picture": "https://picsum.photos/260/260",
+        "name": "product",
+        "description": "non occaecat mollit ut anim",
+        "rating": "4.5"
+    },
+    {
+        "_id": "5f051092b2ea5f6342e1a5ea",
+        "index": 5,
+        "cost": "$2,497.76",
+        "picture": "https://picsum.photos/260/260",
+        "name": "product",
+        "description": "anim consectetur enim consectetur voluptate",
+        "rating": "4.6"
+    },
+    {
+        "_id": "5f051092cc061b962f3b5fc8",
+        "index": 6,
+        "cost": "$2,244.25",
+        "picture": "https://picsum.photos/260/260",
+        "name": "product",
+        "description": "eiusmod sunt pariatur anim irure",
+        "rating": "3.2"
+    },
+    {
+        "_id": "5f0510926c3db3ef4b3b084b",
+        "index": 7,
+        "cost": "$1,438.03",
+        "picture": "https://picsum.photos/260/260",
+        "name": "product",
+        "description": "voluptate occaecat ea cupidatat aliquip",
+        "rating": "1.6"
+    },
+    {
+        "_id": "5f051092c5adbbe36974c7b0",
+        "index": 8,
+        "cost": "$1,666.80",
+        "picture": "https://picsum.photos/260/260",
+        "name": "product",
+        "description": "ullamco sunt do ad ut",
+        "rating": "0.5"
+    },
+    {
+        "_id": "5f051092d40e8add2344cea0",
+        "index": 9,
+        "cost": "$1,371.23",
+        "picture": "https://picsum.photos/260/260",
+        "name": "product",
+        "description": "quis enim ipsum consequat ad",
+        "rating": "3.4"
+    }
+]

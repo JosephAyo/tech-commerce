@@ -19,6 +19,7 @@
 }
 #nav-up>.up-ic{
     cursor: pointer;
+    border-bottom: 1px solid #030f29;
 }
 #nav-up:hover,#nav-up:focus{
     opacity: 0.6;
@@ -37,8 +38,10 @@
     --badge-bg-color: #9c5eb976;
 }
 .with-icon{
-    margin-left: 6px !important;
+    margin-left: 8px !important;
     cursor: context-menu;
+    width: 100%;
+    border-bottom: none;
 }
 .badge-nav-up{
     position: relative;
