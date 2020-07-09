@@ -48,14 +48,14 @@ const Header =(props)=>{
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto nav-items">
                 <Nav.Link eventKey="0" >
-                    <NavLink to="/home" 
+                    <NavLink to="/account" 
                     eventKey={1}
                     className="nav-item" activeStyle={styles.NavbarActive}>
                         <p><ExitToAppTwoTone/> Sign Up</p>
                     </NavLink>
                 </Nav.Link>
                 <Nav.Link eventKey="0" >
-                    <NavLink to="/about"
+                    <NavLink to="/account"
                     eventKey={2} className="nav-item" activeStyle={styles.NavbarActive}>
                         <p><AccountCircleTwoTone/> Sign In</p>
                         </NavLink>

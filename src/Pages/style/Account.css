@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+    --auth-form-color: #f1f1f1;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--auth-form-color);
+    opacity: 1; /* Firefox */
+}
+.account-body{
+    font-family: 'Coda Caption', sans-serif;
+    margin: 3rem 0;
+}
+.auth-form{
+    height: 420px;
+    width: 800px;
+    margin: auto;
+    align-items: center;
+    background-image: url(./SVG/halfwave.svg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 3px #000000;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+@keyframes auth-form-lg {
+    from {
+        opacity: 0;
+        transform: translate(50px,50px);
+    }
+    to {
+        opacity: 1; 
+        transform: translate(0,0);
+    }
+}
+@keyframes auth-form-xs {
+    from {
+        opacity: 0;
+        transform: translate(10px,30px);
+    }
+    to {
+        opacity: 1; 
+        transform: translate(0,0);
+    }
+}
+.focus-auth-form{
+    animation-name: auth-form-lg;
+    animation-duration: 1s;
+}
+.login-form{
+    font-family: 'Roboto', sans-serif;
+    height: 300px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 3px #000000;
+    border-radius: 10px ;
+}
+.login-form>.form-group{
+    width: 100%;
+    display: grid;
+}
+.login-form>.form-group>input{
+    font-size: 15px;
+    font-weight: 600;
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;    
+    padding: 0 10px;
+    background-color: #795ed974;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: var(--auth-form-color);
+    transition: all 0.2s ease-in-out;
+}
+.login-form>.form-group>input:focus{
+    background-color: #261468b3;
+}
+#other-auth-options{
+    display: flex;
+    font-size: 12px;
+    margin: 10px auto;  
+    width: 80%;
+}
+#other-auth-options>.form-check{
+    width: 55%;
+    margin:0;  
+}
+#other-auth-options .form-check-label,#other-auth-options p{
+    margin-top: 3px;
+}
+.large-form-name{
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+}   
+.large-form-name p{
+    margin-bottom: 0;
+}
+#small-welcome{
+    font-size: 15px;
+}
+.auth-btn{
+    margin: auto;
+}
+.auth-btn>button{
+    font-weight: 600;
+    color: var(--auth-form-color);
+    background-color: #795ed974;
+    outline: none;
+    border: none;
+}
+.auth-btn>button:hover,.auth-btn>button:focus{
+    background-color: #261468b3;
+}
+.switch-auth{
+    width: 100%;
+    position: relative;
+}
+.switch-auth>p{
+    width: 25%;
+    height: 30px;
+    padding-top: 3px;
+    text-align: center;
+    background-color: #795ed974;
+    color: var(--auth-form-color);
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.switch-auth>p:hover,.switch-auth>p:focus{
+    background-color: #261468b3;
+}
+@media(max-width:576px){
+    .auth-form{
+        width: 300px;
+        background-position: top;
+        background-size: cover;
+    }
+    .login-form{
+        width: 100%;
+    }
+    .switch-auth>p{
+        width: 45%;
+    }
+    .focus-auth-form{
+        animation-name: auth-form-xs;
+        animation-duration: 1s;
+    }
+}
