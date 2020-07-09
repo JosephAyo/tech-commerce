@@ -11,7 +11,8 @@ import {
     ExitToAppTwoTone,
     FavoriteTwoTone,
     AccountCircleTwoTone,
-    ScatterPlotTwoTone
+    ScatterPlotTwoTone,
+    HomeTwoTone
 } from '@material-ui/icons';
 const NavBrand=(props)=>{
     return(
@@ -48,26 +49,31 @@ const Header =(props)=>{
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto nav-items">
                 <Nav.Link eventKey="0" >
+                    <NavLink to="/home" 
+                    className="nav-item" activeStyle={styles.NavbarActive}>
+                        <p><HomeTwoTone/>Home</p>
+                    </NavLink>
+                </Nav.Link>
+                <Nav.Link eventKey="1" >
                     <NavLink to="/account" 
-                    eventKey={1}
                     className="nav-item" activeStyle={styles.NavbarActive}>
                         <p><ExitToAppTwoTone/> Sign Up</p>
                     </NavLink>
                 </Nav.Link>
-                <Nav.Link eventKey="0" >
+                <Nav.Link eventKey="1" >
                     <NavLink to="/account"
-                    eventKey={2} className="nav-item" activeStyle={styles.NavbarActive}>
+                    className="nav-item" activeStyle={styles.NavbarActive}>
                         <p><AccountCircleTwoTone/> Sign In</p>
                         </NavLink>
                 </Nav.Link>
                 <span id="prod-select-info">
-                <Nav.Link eventKey="0" >
-                    <NavLink to="/coverage-map" className="nav-item fav icon-only" activeStyle={styles.NavbarActive}>
+                <Nav.Link eventKey="2" >
+                    <NavLink to="/favourite" className="nav-item fav icon-only" activeStyle={styles.NavbarActive}>
                         <p><FavoriteTwoTone/> <span className="badge">0</span></p>
                         </NavLink>
                 </Nav.Link>
-                <Nav.Link eventKey="7" >
-                <NavLink to="/contact-bloom" className="nav-item icon-only" activeStyle={styles.NavbarActive}>
+                <Nav.Link eventKey="3" >
+                <NavLink to="/cart" className="nav-item icon-only" activeStyle={styles.NavbarActive}>
                         <p><ShoppingCartTwoTone/> <span className="badge">{scrollPosition}</span> Cart: N0.00</p>
                         </NavLink>
                 </Nav.Link>

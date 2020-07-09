@@ -13,6 +13,7 @@ import {
 } from 'react-bootstrap';
 import NavUp from './Components/NavUp';
 import FeaturedProducts from './Components/Featured Products';
+import Learn from './Components/Learn';
 import AuthForms from './Components/Auth Forms';
 const Home = ({location})=>{
     return(
@@ -60,9 +61,7 @@ const Home = ({location})=>{
                         </div>
                     </Tab>
                     <Tab eventKey="2" title="LEARN">
-                        <div>
-                            learn
-                        </div>
+                        <Learn/>
                     </Tab>
                     <Tab eventKey="3" title="WISHLIST">
                         <div>
