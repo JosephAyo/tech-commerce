@@ -15,7 +15,7 @@ import {
     CompareArrows
 } from '@material-ui/icons';
 import FeaturedProds from '../Data/Feautured Prods.json';
-const Featured = ()=>{
+const Shop = ()=>{
     const [highlight,setHighlight] = React.useState();
     return(
             <Row className="justify-content-center">
@@ -99,4 +99,4 @@ const Featured = ()=>{
     )
 };
 
-export default Featured;
+export default Shop;

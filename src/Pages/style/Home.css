@@ -152,8 +152,31 @@
 .home-tabs>.nav-pills>.nav-link.active{
     background-color: #E8835F !important;
 }
+#filter-div{
+    margin: 10px auto;
+    color: #ffffff;
+}
+#filter-div>div{
+    background-color: #492877;
+    width: fit-content;
+    border-top-right-radius: 17px;
+    height: 40px;
+}
 #filter-categories{
     height: 34px;
+    border-top-right-radius: 17px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #5149cf;
+    height: 40px;
+    width: 200px;
+}
+#tab-title{
+    margin-top: 2rem;
+    font-size: 30px;
+    font-weight: 800;
 }
 @media(max-width:576px){
     #large-home-banner{

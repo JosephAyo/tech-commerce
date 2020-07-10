@@ -16,6 +16,8 @@ import FeaturedProducts from './Components/Featured Products';
 import Learn from './Components/Learn';
 import Wishlist from './Components/Wishlist';
 import AuthForms from './Components/Auth Forms';
+import Shop from './Components/Shop';
+import FilterCategory from './Components/Filter Cat';
 const Home = ({location})=>{
     return(
         <Container className="home-body">
@@ -40,21 +42,17 @@ const Home = ({location})=>{
                 </Col>
             </Row>
             <div  className="home-tabs">
-                <Tabs defaultActiveKey="3"
+                <Tabs defaultActiveKey="0"
                     variant="pills"
                     transition={false}
                     // activeKey={location.pathname==="/account"?"account":null}
                     >
                     <Tab eventKey="0" title="FEATURED">
-                        <div>
-                        <select name="categories" id="filter-categories">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes sadasdkad adjkas</option>
-                        <option value="audi">Audi</option>
-                        </select>
+                        <p id="tab-title">
+                            FEAUTURED PRODUCTS
+                        </p>
+                        <FilterCategory/>
                         <FeaturedProducts/>
-                        </div>
                     </Tab>
                     <Tab eventKey="1" title="ACCOUNT">
                         <div className="account-body">
@@ -68,9 +66,11 @@ const Home = ({location})=>{
                         <Wishlist/>
                     </Tab>
                     <Tab eventKey="4" title="SHOP">
-                        <div>
-                            shop
-                        </div>
+                        <p id="tab-title">
+                            SHOP
+                        </p>
+                        <FilterCategory/>
+                        <Shop/>
                     </Tab>
                 </Tabs>
             </div>

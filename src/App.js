@@ -9,6 +9,7 @@ import {
 import Header from './Pages/Components/Header';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
+import Wishlist from './Pages/Wishlist Page';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Switch>
           <Route path="/home" component={Home}/>
           <Route path="/account" component={Login}/>
+          <Route path="/wishlist" component={Wishlist}/>
           <Route path="/" component={Home}/>
         </Switch>
       </div>

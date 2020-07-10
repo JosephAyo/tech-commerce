@@ -68,7 +68,7 @@ const Header =(props)=>{
                 </Nav.Link>
                 <span id="prod-select-info">
                 <Nav.Link eventKey="2" >
-                    <NavLink to="/favourite" className="nav-item fav icon-only" activeStyle={styles.NavbarActive}>
+                    <NavLink to="/wishlist" className="nav-item fav icon-only" activeStyle={styles.NavbarActive}>
                         <p><FavoriteTwoTone/> <span className="badge">0</span></p>
                         </NavLink>
                 </Nav.Link>
