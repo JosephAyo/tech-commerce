@@ -14,6 +14,7 @@ import {
 import NavUp from './Components/NavUp';
 import FeaturedProducts from './Components/Featured Products';
 import Learn from './Components/Learn';
+import Wishlist from './Components/Wishlist';
 import AuthForms from './Components/Auth Forms';
 const Home = ({location})=>{
     return(
@@ -39,7 +40,7 @@ const Home = ({location})=>{
                 </Col>
             </Row>
             <div  className="home-tabs">
-                <Tabs defaultActiveKey="0"
+                <Tabs defaultActiveKey="3"
                     variant="pills"
                     transition={false}
                     // activeKey={location.pathname==="/account"?"account":null}
@@ -64,9 +65,7 @@ const Home = ({location})=>{
                         <Learn/>
                     </Tab>
                     <Tab eventKey="3" title="WISHLIST">
-                        <div>
-                            wishlist
-                        </div>
+                        <Wishlist/>
                     </Tab>
                     <Tab eventKey="4" title="SHOP">
                         <div>

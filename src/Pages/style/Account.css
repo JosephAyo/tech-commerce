@@ -145,8 +145,22 @@
     .login-form{
         width: 100%;
     }
+    .large-form-name{
+        font-size: 20px;
+        color: #000000;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 500;
+    }   
+    .large-form-name p{
+        margin-bottom: 4px;
+    }
+    #small-welcome{
+        font-size: 15px;
+    }
     .switch-auth>p{
-        width: 45%;
+        width: fit-content;
+        padding: 3px 10px;
     }
     .focus-auth-form{
         animation-name: auth-form-xs;

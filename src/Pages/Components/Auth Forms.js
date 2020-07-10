@@ -18,6 +18,27 @@ const AuthForms = ()=>{
                     <Col sm={8}>
                         <div  className="focus-auth-form">
                             <Form className="login-form">
+                            <Media queries={{
+                                small: "(max-width: 599px)",
+                                medium: "(min-width: 600px) and (max-width: 1199px)",
+                                large: "(min-width: 1200px)"
+                                }}>
+                                {matches => (
+                                    <>
+                                    {(matches.small)  &&   
+                                        <Col sm={4} className="large-form-name">
+                                            <div>
+                                            <p>
+                                                LOGIN
+                                            </p>
+                                            <p id="small-welcome">
+                                                Welcome Back.
+                                            </p>
+                                            </div>
+                                        </Col>}
+                                    </>
+                                )}
+                            </Media>
                                 <Form.Group>
                                     <input
                                         type="email"
@@ -68,7 +89,7 @@ const AuthForms = ()=>{
                     </Media>
                     <div className="switch-auth">
                         <p onClick={()=>setAuthForm(1)}>
-                            Create Account.
+                            Or Create Account.
                         </p>
                     </div>
                 </>:
@@ -77,6 +98,27 @@ const AuthForms = ()=>{
                         <div>
                             <Form className="login-form">
                                 <Form.Group>
+                            <Media queries={{
+                                small: "(max-width: 599px)",
+                                medium: "(min-width: 600px) and (max-width: 1199px)",
+                                large: "(min-width: 1200px)"
+                                }}>
+                                {matches => (
+                                    <>
+                                    {(matches.small)  &&   
+                                        <Col sm={4} className="large-form-name">
+                                            <div>
+                                            <p>
+                                                SIGN UP
+                                            </p>
+                                            <p id="small-welcome">
+                                                Welcome Aboard.
+                                            </p>
+                                            </div>
+                                        </Col>}
+                                    </>
+                                )}
+                            </Media>
                                     <input
                                         type="email"
                                         placeholder="Username or email"
@@ -117,7 +159,7 @@ const AuthForms = ()=>{
                     </Media>
                     <div className="switch-auth">
                     <p onClick={()=>setAuthForm(0)}>
-                            Log In.
+                            Or Log In.
                         </p>
                     </div>
                 </>
