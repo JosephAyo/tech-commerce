@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/tech-commerce/static/css/main.549816c5.chunk.css",
+    "main.js": "/tech-commerce/static/js/main.71c0fb3c.chunk.js",
+    "main.js.map": "/tech-commerce/static/js/main.71c0fb3c.chunk.js.map",
+    "runtime-main.js": "/tech-commerce/static/js/runtime-main.4ecf4850.js",
+    "runtime-main.js.map": "/tech-commerce/static/js/runtime-main.4ecf4850.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/tech-commerce/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.96dc33bd.chunk.js": "/tech-commerce/static/js/2.96dc33bd.chunk.js",
+    "static/js/2.96dc33bd.chunk.js.map": "/tech-commerce/static/js/2.96dc33bd.chunk.js.map",
+    "index.html": "/tech-commerce/index.html",
+    "precache-manifest.47ff2a03f87a2592326d3b85eed29b68.js": "/tech-commerce/precache-manifest.47ff2a03f87a2592326d3b85eed29b68.js",
+    "service-worker.js": "/tech-commerce/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/tech-commerce/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.549816c5.chunk.css.map": "/tech-commerce/static/css/main.549816c5.chunk.css.map",
+    "static/js/2.96dc33bd.chunk.js.LICENSE.txt": "/tech-commerce/static/js/2.96dc33bd.chunk.js.LICENSE.txt",
+    "static/media/Account.css": "/tech-commerce/static/media/halfwave.9aaa3e77.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ecf4850.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.96dc33bd.chunk.js",
+    "static/css/main.549816c5.chunk.css",
+    "static/js/main.71c0fb3c.chunk.js"
+  ]
+}
