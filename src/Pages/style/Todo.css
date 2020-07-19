@@ -1,0 +1,10 @@
+.todo-list{
+    justify-content: center;
+    align-items: center;
+}
+.todo-list>ul{
+    width: 60%;
+    box-shadow: 1px 1px 1px #000000;
+    background-image: url(./SVG//halfwave.svg);
+    background-position: right;
+}
