@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd51c98102914e364b916b355f71b3b6",
+    "revision": "bc0fcc73a63a3a5ddc27ab3e585e3def",
     "url": "/tech-commerce/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tech-commerce/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "ea107dff8ae88bba1ccd",
-    "url": "/tech-commerce/static/css/main.549816c5.chunk.css"
+    "revision": "5b036b10df0cb8fad20b",
+    "url": "/tech-commerce/static/css/main.b1c68075.chunk.css"
   },
   {
     "revision": "e613d418c1f40a90200b",
@@ -20,15 +20,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tech-commerce/static/js/2.7a7e5e65.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ea107dff8ae88bba1ccd",
-    "url": "/tech-commerce/static/js/main.cbf4c5ef.chunk.js"
+    "revision": "5b036b10df0cb8fad20b",
+    "url": "/tech-commerce/static/js/main.09ef4a79.chunk.js"
   },
   {
     "revision": "1199a30fa2f1a56f1bab",
     "url": "/tech-commerce/static/js/runtime-main.4ecf4850.js"
   },
   {
-    "revision": "9aaa3e77b8fce5e1e6c09ef944064203",
-    "url": "/tech-commerce/static/media/halfwave.9aaa3e77.svg"
+    "revision": "5d1744d94ffad1b2cb6b00e35d81045c",
+    "url": "/tech-commerce/static/media/halfwave.5d1744d9.svg"
   }
 ]);
