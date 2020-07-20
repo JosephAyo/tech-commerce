@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 :root{
     --auth-form-color: #f1f1f1;
+    --blur-color: #222da787;
+    --focus-color: #000c66b6;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--auth-form-color);
@@ -70,7 +72,7 @@
     height: 40px;
     margin: 10px auto;    
     padding: 0 10px;
-    background-color: #795ed974;
+    background-color: var(--blur-color);
     border: none;
     border-radius: 10px;
     outline: none;
@@ -78,7 +80,7 @@
     transition: all 0.2s ease-in-out;
 }
 .login-form>.form-group>input:focus{
-    background-color: #261468b3;
+    background-color: var(--focus-color);
 }
 #other-auth-options{
     display: flex;
@@ -111,12 +113,12 @@
 .auth-btn>button{
     font-weight: 600;
     color: var(--auth-form-color);
-    background-color: #795ed974;
+    background-color: var(--blur-color);
     outline: none;
     border: none;
 }
 .auth-btn>button:hover,.auth-btn>button:focus{
-    background-color: #261468b3;
+    background-color: var(--focus-color);
 }
 .switch-auth{
     width: 100%;
@@ -127,14 +129,14 @@
     height: 30px;
     padding-top: 3px;
     text-align: center;
-    background-color: #795ed974;
+    background-color: var(--blur-color);
     color: var(--auth-form-color);
     border-top-right-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 .switch-auth>p:hover,.switch-auth>p:focus{
-    background-color: #261468b3;
+    background-color: var(--focus-color);
 }
 @media(max-width:576px){
     .auth-form{

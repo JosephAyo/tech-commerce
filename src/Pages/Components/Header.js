@@ -16,7 +16,7 @@ import {
 } from '@material-ui/icons';
 const NavBrand=(props)=>{
     return(
-        <NavLink className="nav-item nav-brand-custom" to="/home">
+        <NavLink className="header-nav-item nav-brand-custom" to="/home">
             <ScatterPlotTwoTone/>
             <p style={{margin:"auto 1rem"}}>TECH COMMERCE</p>
         </NavLink>
@@ -47,33 +47,33 @@ const Header =(props)=>{
         <Navbar.Brand className="nav-brand" as={NavBrand}/>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto nav-items">
+            <Nav className="ml-auto header-nav-items">
                 <Nav.Link eventKey="0" >
                     <NavLink to="/home" 
-                    className="nav-item" activeStyle={styles.NavbarActive}>
+                    className="header-nav-item" activeStyle={styles.NavbarActive}>
                         <p><HomeTwoTone/>Home</p>
                     </NavLink>
                 </Nav.Link>
                 <Nav.Link eventKey="1" >
                     <NavLink to="/account" 
-                    className="nav-item" activeStyle={styles.NavbarActive}>
+                    className="header-nav-item" activeStyle={styles.NavbarActive}>
                         <p><ExitToAppTwoTone/> Sign Up</p>
                     </NavLink>
                 </Nav.Link>
                 <Nav.Link eventKey="1" >
                     <NavLink to="/account"
-                    className="nav-item" activeStyle={styles.NavbarActive}>
+                    className="header-nav-item" activeStyle={styles.NavbarActive}>
                         <p><AccountCircleTwoTone/> Sign In</p>
                         </NavLink>
                 </Nav.Link>
                 <span id="prod-select-info">
                 <Nav.Link eventKey="2" >
-                    <NavLink to="/wishlist" className="nav-item fav icon-only" activeStyle={styles.NavbarActive}>
+                    <NavLink to="/wishlist" className="header-nav-item fav icon-only" activeStyle={styles.NavbarActive}>
                         <p><FavoriteTwoTone/> <span className="badge">0</span></p>
                         </NavLink>
                 </Nav.Link>
                 <Nav.Link eventKey="3" >
-                <NavLink to="/cart" className="nav-item icon-only" activeStyle={styles.NavbarActive}>
+                <NavLink to="/cart" className="header-nav-item icon-only" activeStyle={styles.NavbarActive}>
                         <p><ShoppingCartTwoTone/> <span className="badge">{scrollPosition}</span> Cart: N0.00</p>
                         </NavLink>
                 </Nav.Link>
@@ -87,7 +87,7 @@ const Header =(props)=>{
 
 const styles = {
     NavbarActive: {
-        color: "#E8835F"
+        color: "#0D98BA"
     },
     NavbarDropItems: {
         textDecoration: "none",

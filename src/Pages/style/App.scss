@@ -2,8 +2,8 @@
     background-color: white;
 }
 #nav-up{    
-    background-color: #030f29;
-    color: #A684FF;
+    background-color: #0D98BA;
+    color: #000C66;
     opacity: 0.3;
     position: fixed;
     bottom: 4%;
@@ -19,12 +19,12 @@
 }
 #nav-up>.up-ic{
     cursor: pointer;
-    border-bottom: 1px solid #030f29;
+    border-bottom: 1px solid #0D98BA;
 }
 #nav-up:hover,#nav-up:focus{
     opacity: 0.6;
-    background-color: #A684FF;
-    color: #030f29;
+    background-color: #000C66;
+    color: #0D98BA;
 }
 #nav-up>p{
     font-size: 30px;
@@ -34,8 +34,8 @@
     --badge-bg-color: #9b6ab84e;
 }
 #nav-up>p:hover{
-    --badge-color: #f1fd10;
-    --badge-bg-color: #9c5eb976;
+    --badge-color: #0D98BA;
+    --badge-bg-color: #000c66d3;
 }
 .with-icon{
     margin-left: 8px !important;
