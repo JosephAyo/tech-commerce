@@ -10,6 +10,7 @@ import Header from './Pages/Components/Header';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import Wishlist from './Pages/Wishlist Page';
+import Cart from './Pages/Cart Page';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/home" component={Home}/>
           <Route path="/account" component={Login}/>
           <Route path="/wishlist" component={Wishlist}/>
+          <Route path="/cart" component={Cart}/>
           <Route path="/" component={Home}/>
         </Switch>
       </div>

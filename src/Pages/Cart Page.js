@@ -1,5 +1,5 @@
 import React from 'react';
-import './style/Home.css';
+import './style/Cart.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { 
     Row,
@@ -18,34 +18,34 @@ import {
 } from '@material-ui/icons';
 import NavUp from './Components/NavUp';
 import FavProds from './Data/Fav Prods.json';
-const Wishlist = ({location})=>{
+const Cart = ({location})=>{
     React.useEffect(()=>{
-        if(location.pathname==="/wishlist"){
+        if(location.pathname==="/cart"){
             window.scrollTo({top:500,left :0,behavior:'smooth'})
         }
     },[location.pathname]);
-    const [wishlistState,setWishlistState] = React.useState({
+    const [cartState,setCartState] = React.useState({
         products: null,
         recentlyRemoved:null
     });
     const [highlight,setHighlight] = React.useState();
     React.useEffect(()=>{
-        setWishlistState(wishlistState=>({...wishlistState, products:FavProds}));
+        setCartState(cartState=>({...cartState, products:FavProds}));
     },[]);
     // const removeHandler=(action,index)=>{
     //     let currentRemoved = null; 
-    //     let currentWishlist = wishlistState.splice();
+    //     let currentCart = cartState.splice();
     //     switch (action) {
     //         case 0:
-    //             currentRemoved = wishlistState[index];
-    //             currentWishlist = currentWishlist.filter(el=>el !== wishlistState[index]);
+    //             currentRemoved = cartState[index];
+    //             currentCart = currentCart.filter(el=>el !== cartState[index]);
     //             break;
     //         case 1: 
-    //             currentWishlist.shift(wishlistState.recentlyRemoved)
+    //             currentCart.shift(cartState.recentlyRemoved)
     //         default:
     //             break;
     //     }
-    //     setWishlistState({...wishlistState,products:currentWishlist,recentlyRemoved:currentRemoved})
+    //     setCartState({...cartState,products:currentCart,recentlyRemoved:currentRemoved})
     // }
     return(
         <Container className="home-body"> 
@@ -69,35 +69,40 @@ const Wishlist = ({location})=>{
                     </Form>
                 </Col>
             </Row>
-                <div className="wishlist-body">
+                <div className="cart-body">
                 <p>
-                    WISHLIST
+                    CART
                 </p>
                 <Row className="justify-content-center">
-                <Table responsive id="wishlist-table">
-                    <thead id="wishlist-thead">
-                        <tr id="wishlist-head-tr">
-                            <th className="wishlist-th" id="product-th">
+                <Table responsive id="cart-table">
+                    <thead id="cart-thead">
+                        <tr id="cart-head-tr">
+                            <th className="cart-th" id="product-th">
                                 <p>
                                     Product
                                 </p>
                             </th>
-                            <th className="wishlist-th">
+                            <th className="cart-th">
                                 <p>
                                     Unit Price
                                 </p>
                             </th>
-                            <th className="wishlist-th">
+                            <th className="cart-th">
                                 <p>
                                     Stock Availability
                                 </p>
                             </th>
-                            <th className="wishlist-th">
+                            <th className="cart-th">
                                 <p>
-                                    Add To Cart
+                                    Quantity
                                 </p>
                             </th>
-                            <th className="wishlist-th">
+                            <th className="cart-th">
+                                <p>
+                                    Total 
+                                </p>
+                            </th>
+                            <th className="cart-th">
                                 <p>
                                     Remove
                                 </p>
@@ -105,27 +110,24 @@ const Wishlist = ({location})=>{
                         </tr>
                     </thead>
                     <tbody>{
-                        wishlistState.products == null?
+                        cartState.products == null?
                         <tr>
                             <td colSpan={5}>
-                                <p id="no-wishlist-prod">
+                                <p id="no-cart-prod">
                                     No products to show.
                                 </p>
                             </td>
                         </tr>:
-                        wishlistState.products.map((product,index)=>{
+                        cartState.products.map((product,index)=>{
                         return( 
                             <tr key={product._id}>
                                 <td>
-                                    {/* <p className="prod-p">
-                                        {product.name}
-                                    </p> */}
-                                    <div className="item-box" 
+                                    <div className="item-box-cart" 
                                         onMouseEnter={()=>setHighlight(index)}
                                         onTouchStart={()=>setHighlight(index)} >
-                                            <span className="product-img-span">
-                                                <img src={product.picture} alt={product.name} width="200"/>
-                                                <div id={highlight===index?"show-options":"hide-options"}>
+                                            <span className="product-img-span-cart">
+                                                <img src={product.picture} alt={product.name} width="100"/>
+                                                <div id={highlight===index?"show-options-cart":"hide-options-cart"}>
                                                 <OverlayTrigger
                                                     placement='top'
                                                     overlay={
@@ -170,7 +172,12 @@ const Wishlist = ({location})=>{
                                 </td>
                                 <td>
                                     <p className={product.inCart?"carted-p":"not-carted-p"}>
-                                        {product.inCart?"Added":"Not in cart"}
+                                        <input type="number" value={1}/>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className="prod-p">
+                                        {product.cost}
                                     </p>
                                 </td>
                                 <td>
@@ -190,4 +197,4 @@ const Wishlist = ({location})=>{
     )
 };
 
-export default Wishlist;
+export default Cart;

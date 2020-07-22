@@ -14,11 +14,31 @@ import {
     VisibilityTwoTone,
     CompareArrows
 } from '@material-ui/icons';
+import disableScroll from 'disable-scroll';
 import FeaturedProds from '../Data/Feautured Prods.json';
+import JustAdded from './Just Added';
 const Featured = ()=>{
     const [highlight,setHighlight] = React.useState();
+    const [addProductState, setAddProductState] = React.useState({
+        isAdded: false,
+        product: null
+    });
+    React.useEffect(() => {
+        if(addProductState.isAdded){
+            disableScroll.on();
+        } 
+        return () => {
+            disableScroll.off();
+        }
+    }, [addProductState.isAdded]);
     return(
             <Row className="justify-content-center">
+            { addProductState.isAdded &&
+                <JustAdded 
+                onClose={()=>setAddProductState({...addProductState,isAdded:false})}
+                product={addProductState.product}
+                />
+            }
             {   FeaturedProds.map((product,index)=>{
                 return(
                     <Col xs={12} sm={6} lg={3}  key={product._id}>
@@ -37,7 +57,8 @@ const Featured = ()=>{
                                         </Tooltip>
                                         }
                                     >
-                                        <p className={product.inCart?"carted-p":""}>
+                                        <p className={product.inCart?"carted-p":""} 
+                                        onClick={()=>setAddProductState({...addProductState,isAdded:true,product:product})}>
                                             <ShoppingCartTwoTone/>
                                         </p>
                                 </OverlayTrigger>

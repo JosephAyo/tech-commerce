@@ -134,7 +134,7 @@ const Wishlist = ()=>{
                             </td>
                             <td>
                                 <p className={product.availability?"avail-p":"un-avail-p"}>
-                                    {product.availability?"In stock":"Out in stock"}
+                                    {product.availability?"In stock":"Out of stock"}
                                 </p>
                             </td>
                             <td>
