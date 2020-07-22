@@ -10,7 +10,7 @@ function useOutsideCloser(ref) {
          */
         function handleClickOutside(event) {
         if (ref.current && !ref.current.contains(event.target)) {
-            alert("You clicked outside of me!");
+            // alert("You clicked outside of me!");
         }
         }
         // Bind the event listener

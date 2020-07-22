@@ -29,7 +29,7 @@ const Added = ({onClose,product}) => {
                     <tbody>
                         <tr>
                             <td rowSpan={3}>
-                                <img src={product.picture} alt="product"/>
+                                <img src={product.picture} alt="product" id="add-card-img"/>
                             </td>
                             <td rowSpan={3} id="add-card-details">
                                 <p>

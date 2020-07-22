@@ -34,10 +34,12 @@ const Featured = ()=>{
     return(
             <Row className="justify-content-center">
             { addProductState.isAdded &&
+            <Col sm={12}>
                 <JustAdded 
                 onClose={()=>setAddProductState({...addProductState,isAdded:false})}
                 product={addProductState.product}
                 />
+            </Col>
             }
             {   FeaturedProds.map((product,index)=>{
                 return(
